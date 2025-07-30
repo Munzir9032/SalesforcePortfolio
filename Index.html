@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munzir | Salesforce Freelancer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .nav-active {
+      color: #93c5fd;
+      font-weight: 600;
+    }
+
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-animate.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style> 
+
+
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="bg-slate-900 backdrop-blur-sm text-white p-4 sticky top-0 z-50 shadow-lg" >
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#home" class="text-2xl font-bold hover:text-blue-300 transition-colors">Munzir</a>
+      <ul class="hidden md:flex items-center space-x-6">
+        <li><a href="#home" class="hover:text-blue-300 transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-300 transition-colors">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-300 transition-colors">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="gradient-bg text-white h-[calc(100vh-64px)] flex items-center justify-center">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Munzir</h1>
+      <h2 class="text-2xl md:text-3xl mb-6 font-light">
+        A <span id="typed-text" class="font-semibold text-blue-300"></span>
+      </h2>
+      <p class="text-lg text-slate-300 mb-8 max-w-3xl mx-auto">
+        Transforming businesses with innovative Salesforce solutions, from custom LWC development to strategic
+        OmniStudio implementation.
+      </p>
+      <a href="#projects"
+        class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-transform hover:scale-105">View
+        My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 scroll-animate">
+        <h2 class="text-4xl font-bold text-slate-800">About Me</h2>
+        <p class="text-slate-500 mt-2">My journey and passion for Salesforce.</p>
+      </div>
+      <div class="flex justify-center">
+        <div class="text-lg leading-relaxed text-center max-w-4xl scroll-animate">
+          <p>
+            I'm a passionate and certified Salesforce consultant with over <strong>5 years of experience</strong>
+            delivering tailored solutions that enhance business efficiency. Specializing in <strong>Lightning Web
+              Components (LWC), OmniStudio, and Apex</strong>, I help organizations unlock the full potential of the
+            Salesforce platform.
+          </p>
+          <p class="mt-4">
+            My approach combines deep technical expertise with strategic thinking to drive measurable results. Whether
+            it's architecting a complex solution or optimizing a critical business process, I thrive on solving
+            challenges with clean, scalable, and innovative code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 scroll-animate">
+        <h2 class="text-4xl font-bold text-slate-800">Skills & Expertise</h2>
+        <p class="text-slate-500 mt-2">The tools and technologies I excel at.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Skill Card 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-md card-hover text-center scroll-animate">
+          <div class="flex justify-center items-center mb-4 bg-blue-100 rounded-full w-16 h-16 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Salesforce Development</h3>
+          <p class="text-slate-600">Expert in Apex, SOQL, and Visualforce for building robust, scalable backend
+            solutions.</p>
+        </div>
+        <!-- Skill Card 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-md card-hover text-center scroll-animate"
+          style="transition-delay: 150ms;">
+          <div class="flex justify-center items-center mb-4 bg-green-100 rounded-full w-16 h-16 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Lightning Web Components</h3>
+          <p class="text-slate-600">Proficient in creating modern, performant, and reusable UI components with LWC.</p>
+        </div>
+        <!-- Skill Card 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-md card-hover text-center scroll-animate"
+          style="transition-delay: 300ms;">
+          <div class="flex justify-center items-center mb-4 bg-purple-100 rounded-full w-16 h-16 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6V4m0 16v-2m0-8v-2m8 8h2m-18 0h2m14-14h2M4 6h2m12 8a6 6 0 01-12 0 6 6 0 0112 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">OmniStudio</h3>
+          <p class="text-slate-600">Skilled in leveraging OmniStudio for rapid development of guided processes and
+            dynamic forms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16 scroll-animate">
+        <h2 class="text-4xl font-bold text-slate-800">Featured Projects</h2>
+        <p class="text-slate-500 mt-2">A selection of my proudest work.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-slate-50 p-8 rounded-lg shadow-sm card-hover flex flex-col scroll-animate">
+          <h3 class="text-2xl font-semibold mb-2">Scheduling & Travel Management</h3>
+          <p class="text-slate-600 mb-4 flex-grow">A comprehensive solution to schedule visits, track travel, and
+            enhance efficiency for a sales and business development team.</p>
+          <div class="mb-4">
+            <h4 class="font-semibold text-slate-700 mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-slate-600 space-y-1">
+              <li>Calendar-based visit planning</li>
+              <li>Geo-location for expense calculation</li>
+              <li>Automated user deactivation</li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-sm font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">LWC & Aura</span>
+              <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">Apex</span>
+              <span class="text-sm font-semibold text-green-600 bg-green-100 py-1 px-3 rounded-full">Automation</span>
+            </div>
+            <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded-r-lg">
+              <p class="text-green-700 font-medium"><strong>Outcome:</strong> Smoother scheduling and better control
+                over user activity.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-slate-50 p-8 rounded-lg shadow-sm card-hover flex flex-col scroll-animate"
+          style="transition-delay: 150ms;">
+          <h3 class="text-2xl font-semibold mb-2">Placement & Training Management</h3>
+          <p class="text-slate-600 mb-4 flex-grow">A system for a non-profit to manage student job placements after
+            course completion via a custom evaluation process.</p>
+          <div class="mb-4">
+            <h4 class="font-semibold text-slate-700 mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-slate-600 space-y-1">
+              <li>Dynamic student evaluation screen</li>
+              <li>Custom forms for data collection</li>
+              <li>Photo upload for verification</li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-sm font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Lightning
+                Components</span>
+              <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">Apex</span>
+              <span class="text-sm font-semibold text-gray-600 bg-gray-100 py-1 px-3 rounded-full">Custom UI/UX</span>
+            </div>
+            <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded-r-lg">
+              <p class="text-green-700 font-medium"><strong>Outcome:</strong> Streamlined placements and improved
+                process efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="gradient-bg py-24 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <div class="scroll-animate">
+        <h2 class="text-4xl font-bold mb-4">Let's Build Something Great</h2>
+        <p class="text-lg text-slate-300 mb-10 max-w-2xl mx-auto">
+          Ready to elevate your Salesforce experience? Let's collaborate. Fill out the form or connect with me on
+          LinkedIn.
+        </p>
+      </div>
+      <!-- Contact Form -->
+      <form id="contact-form" class="max-w-xl mx-auto text-left scroll-animate" style="transition-delay: 150ms;">
+        <div class="mb-4">
+          <label for="name" class="block mb-2 text-sm font-medium text-slate-300">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required
+            class="w-full px-4 py-2 bg-slate-800/50 border border-slate-600 rounded-md focus:ring-blue-500 focus:border-blue-500 transition">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block mb-2 text-sm font-medium text-slate-300">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required
+            class="w-full px-4 py-2 bg-slate-800/50 border border-slate-600 rounded-md focus:ring-blue-500 focus:border-blue-500 transition">
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-medium text-slate-300">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your Message" required
+            class="w-full px-4 py-2 bg-slate-800/50 border border-slate-600 rounded-md focus:ring-blue-500 focus:border-blue-500 transition"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit"
+            class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition-transform hover:scale-105">Send
+            Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 p-6 text-center">
+    <div class="container mx-auto">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer"
+          class="hover:text-white transition-colors">LinkedIn</a>
+      </div>
+      <p>&copy; 2024 Munzir. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Typed.js for animated text in the hero section
+      const typed = new Typed('#typed-text', {
+        strings: ['Salesforce Consultant', 'LWC Developer', 'OmniStudio Expert', 'Apex Specialist'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true
+      });
+
+      // 2. Smooth scrolling for anchor links, accounting for sticky nav height
+      const navHeight = document.getElementById('navbar').offsetHeight;
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // 3. Intersection Observer for fade-in animations on scroll
+      const animatedElements = document.querySelectorAll('.scroll-animate');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      animatedElements.forEach(el => observer.observe(el));
+
+
+      // 4. Intersection Observer for active navigation link highlighting
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.remove('nav-active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('nav-active');
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: `-${navHeight}px 0px -40% 0px` // Triggers when section is in the upper part of the viewport
+      });
+
+      sections.forEach(section => sectionObserver.observe(section));
+
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("fRwr8SAMvgM9KqsGi"); // Replace with your real EmailJS public key
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop the default HTML POST
+
+      emailjs.sendForm('service_w6ielrl', 'template_6kr1sjd', this)
+        .then(function () {
+          console.error(' sent email Successfully!');
+          alert('Email sent successfully!');
+          e.target.reset();
+        }, function (error) {
+          console.error('❌ Failed:', error);
+          alert('Failed to send message. Try after some time!!');
+        });
+    });
+  </script>
+</body>
+
+</html>

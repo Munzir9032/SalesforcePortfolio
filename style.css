@@ -1,0 +1,35 @@
+body {
+    font-family: 'Inter', sans-serif;
+    opacity: 0; /* Start hidden for fade-in effect */
+    animation: fadeIn 0.8s ease-out forwards;
+}
+/* Keyframe animation for a smooth fade-in on page load */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Custom gradient for header for a more dynamic look */
+.header-gradient {
+    background-image: linear-gradient(to right, #0072C6, #00C6FF); /* Blue to lighter blue/cyan */
+}
+/* Custom styles for icon sizing if needed, though Tailwind handles most */
+.icon-lg {
+    width: 3rem; /* 48px */
+    height: 3rem; /* 48px */
+}
+/* Animation for hero button */
+.hero-button-animation {
+    transition: all 0.3s ease-in-out;
+}
+.hero-button-animation:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Card hover effect for services and projects */
+.card-hover-effect {
+    transition: all 0.3s ease-in-out;
+}
+.card-hover-effect:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
